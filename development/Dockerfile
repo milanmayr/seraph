@@ -8,6 +8,9 @@ RUN sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/
     -p git \
     -p golang
 
+# Install OpenSSH for pushing Git changes
+RUN ["apk", "add", "--update", "--no-cache", "openssh"]
+
 # Customize ZSH prompt
 RUN echo 'PROMPT="%U%{$fg[yellow]%}seraph-dev%u ${PROMPT}"' >> ~/.zshrc
 
