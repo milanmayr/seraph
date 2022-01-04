@@ -14,5 +14,5 @@ Seraph is a tool that helps Site Reliability Engineers automate their incident r
 2.  Run the development Docker container  
 `docker run -itd --name seraph-dev --mount src="$(pwd)",target=/go/src/github.com/milanmayr/seraph/,type=bind seraph-dev /bin/sh`
 
-3.  Exec into the Docker container  
+3.  Shell into the Docker container  
 `docker exec -it -u 0 seraph-dev /bin/zsh`
