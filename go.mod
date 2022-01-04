@@ -1,5 +1,4 @@
-module example.com/m
-
+module github.com/milanmayr/seraph
 go 1.16
 
 require (
